@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #919191;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Font för "home" sidan*/
+.custom-font {
+  font-family: 'Playfair Display', serif; /* Använd Playfair Display */
+  font-size: 1.25rem; /* Justera storleken om nödvändigt */
+  color: #000000; /* Justera färgen om nödvändigt */
+}
+
+
+/* Font för footer trxt*/
+.playfair-font {
+  font-family: 'Playfair Display', serif; /* Använd Playfair Display */
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrera horisontellt */
+  justify-content: center; /* Centrera vertikalt */
+  .bg-body-tertiary {
+    min-height: 100vh; /* Se till att detta element fyller hela höjden av viewporten */
+  }
+    text-align: center; /* Centrera textinnehållet */
+}
+
+
+.transparent-button {
+  background-color: transparent; /* Genomskinlig bakgrund */
+  border: 2px solid black; /* Svart kant */
+  color: black; /* Textfärg */
+  padding: 12px 24px; /* Justera storleken på knappen (vertikal och horisontell padding) */
+  font-size: 1.25rem; /* Öka textstorleken */
+  transition: background-color 0.3s, color 0.3s; /* Lägga till en övergång för effekter */
+}
+
+.transparent-button:hover {
+  background-color: black; /* Bakgrundsfärg vid hover */
+  color: white; /* Textfärg vid hover */
+}
+
+/* VÅRA BEHANDLINGAR SIDA*/
+
+.treatment-box {
+  border: 2px solid rgb(211, 180, 1); /* Guldkanter */
+  padding: 20px; /* Lägger till padding för luft runt innehållet */
+  border-radius: 0px; /* Gör hörnen lite rundade */
+  background-color: #f8f9fa; /* Lätt bakgrundsfärg för boxen */
+  max-width: 600px; /* Sätter en maxbredd för boxen */
+  margin: 0 auto; /* Centrerar boxen */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en subtil skugga för djup */
+  font-family: 'Playfair Display', serif; /* Använd Playfair Display */
+
+}
+
+h3 {
+  color: #333; /* Färgar rubrikerna mörkare */
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px; /* Flyttar in texten lite för en snygg layout */
+}
+
+li {
+  margin-bottom: 10px; /* Lite avstånd mellan varje lista-element */
+}
+
+/* HOME BILDEN JUSTERAT FÖR MOBIL OCH WEB-VY */
+.responsive-logo {
+  max-width: 100%;
+  height: auto;   
+}
+
+@media (min-width: 768px) {
+  .responsive-logo {
+    max-width: 600px; 
+  }
+}
+
+.centered-button-container {
+  text-align: center;
+}
