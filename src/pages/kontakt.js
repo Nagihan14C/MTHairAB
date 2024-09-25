@@ -30,6 +30,7 @@ export default function Footer() {
                         </p>
                     </div>
 
+
                     {/* Öppettider */}
                     <div className="text-center bi bi-clock">
                         <h5>Öppettider</h5>
