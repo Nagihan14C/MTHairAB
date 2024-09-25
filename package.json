@@ -2,6 +2,8 @@
   "name": "03-react-page-link",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nagihan14c.github.io/MTHairAB", 
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
