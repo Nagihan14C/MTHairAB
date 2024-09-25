@@ -37,12 +37,57 @@
   }
 }
 
-/* Font för "home" sidan*/
+
+
+
+
+
+
+
+/* Globala stilar */
+body {
+  background-color: black !important; /* Tvingar bakgrundsfärgen till svart */
+  color: white !important; /* Tvingar textfärgen till vit */
+  margin: 0; /* Tar bort standardmarginaler */
+  padding: 0; /* Tar bort standardpadding */
+  height: 100vh; /* Se till att kroppen täcker hela höjden av viewporten */
+}
+
+/* Font för "home" sidan */
 .custom-font {
   font-family: 'Playfair Display', serif; /* Använd Playfair Display */
   font-size: 1.25rem; /* Justera storleken om nödvändigt */
-  color: #000000; /* Justera färgen om nödvändigt */
+  color: white !important; /* Tvingar textfärgen till vit */
 }
+
+/* Specifika stilar för bg-body-tertiary */
+.bg-body-tertiary {
+  background-color: black !important; /* Tvingar svart bakgrund för textcontainern */
+  color: white !important; /* Tvingar vit textfärg */
+}
+
+/* För att se till att länkar också är vita */
+a {
+  color: white !important; /* Tvingar länktext till vit */
+  text-decoration: none; /* Tar bort understrykning på länkar */
+}
+
+a:hover {
+  text-decoration: underline; /* Understryker länkar vid hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Font för footer trxt*/
@@ -82,7 +127,7 @@
   border: 2px solid rgb(211, 180, 1); /* Guldkanter */
   padding: 20px; /* Lägger till padding för luft runt innehållet */
   border-radius: 0px; /* Gör hörnen lite rundade */
-  background-color: #f8f9fa; /* Lätt bakgrundsfärg för boxen */
+  background-color: #030303; /* Lätt bakgrundsfärg för boxen */
   max-width: 600px; /* Sätter en maxbredd för boxen */
   margin: 0 auto; /* Centrerar boxen */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en subtil skugga för djup */
@@ -118,3 +163,51 @@ li {
 .centered-button-container {
   text-align: center;
 }
+
+/* App.css */
+body {
+  background-color: black !important; /* Sätter bakgrundsfärgen till svart */
+  color: white !important; /* Sätter textfärgen till vit */
+}
+
+/* Länkar */
+a {
+  color: white !important; /* Sätter länktext till vit */
+  text-decoration: none; /* Tar bort understrykning på länkar */
+}
+
+a:hover {
+  text-decoration: underline; /* Understryker länkar vid hover */
+}
+
+/* Valfritt: Justera styling för Bootstrap-komponenter */
+.container {
+  background-color: transparent !important; /* Gör så att behållarens bakgrund är genomskinlig */
+}
+
+/* NavMenu.css */
+.custom-navbar {
+  background-color: black; /* Sätter bakgrundsfärgen till svart */
+}
+
+.custom-navbar .nav-link {
+  color: white; /* Sätter textfärgen på länkar till vit */
+  font-size: 1.50rem; /* Större text (till exempel 1.25rem, justera som du vill) */
+  font-family: 'Playfair Display', serif; /* Använd Playfair Display */
+
+}
+
+.custom-navbar .nav-link:hover {
+  color: lightgray; /* Ändrar färgen vid hover */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: white; /* Ändra färgen på toggler-knappen */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
