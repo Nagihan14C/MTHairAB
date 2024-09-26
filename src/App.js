@@ -1,23 +1,22 @@
 import './App.css';
 import './css/grid.css';
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/footer';
 import Header from './components/header';
-import {AppRouter} from './router/approuter';
-
+import { AppRouter } from './router/approuter';
 
 function App() {
   return (
-    <BrowserRouter>
-    
-      <Header/>
-      <AppRouter/>   
-      <Footer/>
+    <BrowserRouter basename="/MTHairAB"> {/* Lägg till basename här */}
+      <Header />
+      <AppRouter />
+      <Footer />
     </BrowserRouter>
-    );
+  );
 }
 
 export default App;
+
 
 /* Exercise
 1. Add component <Musicalbums/> from 08-app-bs-async as a page component
