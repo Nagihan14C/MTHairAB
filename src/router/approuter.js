@@ -13,7 +13,6 @@ export function AppRouter() {
     <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/tjanster' element={<Tjanster/>}></Route>
-
         <Route path='/kontakt1' element={<Kontakt1/>}></Route>
         <Route path='/about' element={<About/>}></Route>
 
